@@ -1,0 +1,9 @@
+<h1>Spendings Here:</h1>
+
+<div *ngFor="let s of spendings">
+  <h3>Department No {{s.id}}</h3>
+  <p>Name: {{s.name}}</p>
+  <p>Price: {{s.price}}</p>
+  <p>Time: {{s.time}}</p>
+  <p *ngIf="s.category">Category: {{s.category.name}}</p>
+</div>
